@@ -1,0 +1,294 @@
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    background-color: rgb(39, 159, 230);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+}
+
+.navbar .logo {
+    width: 150px;
+    height: 100px;
+    grid-column: 2 / 3;
+}
+
+.navbar .menu{
+    grid-column: 4 / 7;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .menu li{
+    list-style: none;
+}
+
+.navbar .menu a{
+    text-decoration: none;
+    color: #181818;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 600px){
+
+    .navbar{
+        position: relative;
+    }
+
+    .navbar .menu-bar{
+        display: block;
+        grid-column: 8 / 9;
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+    .navbar .menu{
+        position: absolute;
+        width: 100%;
+        height: 70vh;
+        display: grid;
+        align-items: center;
+        background-color: rgb(39, 159, 230);
+        margin-top: 38em;
+        transform:translateX(170%)
+
+    }
+}
+
+
+/*  MAIN  */
+
+.contenido{
+    height: 88vh;
+    background-image: url(../img/gruponetfondo.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+
+}
+
+.contenido .principal1{
+    grid-column: 3 / 9;
+    grid-row: 3 / 7;
+    color: whitesmoke;
+    align-content: center;
+}
+
+.contenido h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5em;
+}
+
+@media only screen and (max-width: 600px){
+    .contenido .principal1{
+        grid-column: 2 / 10;
+        grid-row: 4 / 8;
+    }
+}
+
+
+/* FOOTER */
+
+.footer{
+    height: 80px;
+    align-items: center;
+    background-color: rgb(39, 159, 230);
+    color: white;
+    column-gap: 40px;
+    grid-column: 4 / 7;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+/* NOSOTROS */
+
+.nosotroscontent {
+    height: 88vh;
+    background-image: url(../img/gruponetfondo.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+
+.nosotroscontent .cuadronosotros{
+    display: grid;
+    grid-template-areas: "head head"
+                         "menu main"
+                         "foot foot";
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+    color: aliceblue;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-auto-rows: minmax(125px, auto);
+}
+
+.a { grid-area: head; background: rgb(80, 15, 141) }
+.b { grid-area: menu; background: rgb(24, 102, 102) }
+.c { grid-area: main; background: rgb(24, 102, 102) }
+.d { grid-area: foot; background: rgb(23, 77, 179) }
+
+
+@media only screen and (max-width: 600px){
+    .nosotroscontent .cuadronosotros{
+        grid-column: 2 / 10;
+        grid-row: 4 / 8;
+    }
+}
+
+
+
+
+/* CONTACTO */
+
+.datoscontact{
+    height: 88vh;
+    background-image: url(../img/gruponetfondo.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.datoscontact .formulario{
+    grid-column: 3 / 9;
+    grid-row: 3 / 7;
+    color: whitesmoke;
+    align-content: center;
+}
+
+
+@media only screen and (max-width: 600px){
+    .datoscontact .formulario{
+        grid-column: 2 / 10;
+        grid-row: 4 / 8;
+    }
+}
+
+
+
+/* SERVICIOS */
+
+.servicios{
+    height: 88vh;
+    background-image: url(../img/gruponetfondo.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.servicios .tablaservicios{
+    grid-column: 2 / 9;
+    grid-row: 3 / 7;
+    color: whitesmoke;
+    align-content: center;
+}
+
+@media only screen and (max-width: 600px){
+    .servicios .tablaservicios{
+        position: absolute;
+        width: 100%;
+        height: 70vh;
+        display: grid;
+        align-items: center;
+        margin-top: 8em;
+        transform:translateX(170%)
+    }
+}
+
+
+/* PRODUCTOS */
+.productos{
+    height: 88vh;
+    background-image: url(../img/gruponetfondo.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    max-width: 100%;
+    display: grid;
+}
+
+.cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.4s;
+    background-blend-mode: darken;
+  }
+  
+  .card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+  }
+  
+  .card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: cover;
+  }
+  
+  .card .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -80px;
+    height: 40px;
+  }
+  
+  .card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  
+  .title-white {
+    color: white;
+    text-shadow: #000000;
+  }
+  
+  
+  @media all and (max-width: 600px) {
+    .card-list {flex-direction: column;
+    }
+  }
