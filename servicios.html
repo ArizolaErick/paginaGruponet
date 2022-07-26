@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GRUPONET</title>
+    <title>GRUPONET - SERVICIOS EN ELECTRÓNICA</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
 </head>
@@ -20,39 +20,75 @@
                 <li><a href="./nosotros.html">NOSOTROS</a></li>
                 <li><a href="./contacto.html">CONTACTO</a></li>
           </ul>
-          <div class="menu-bar"></div>
-            <i class="fa-solid fa-bars"></i>
+          <div class="cont-menu-mobile">
+            <i role="button" class="fa-solid fa-xmark"></i>
+            <div class="menu-mobile">
+                <a href="./index.html">INICIO</a>
+                <a href="./productos.html">PRODUCTOS</a>
+                <a href="./servicios.html">SERVICIOS</a>
+                <a href="./nosotros.html">NOSOTROS</a>
+                <a href="./contacto.html">CONTACTO</a>
+            </div>
+          </div>
+          <div class="menu-bar"><i class="fa-solid fa-bars"></i></div>
     </header>
 
     <main class="servicios">
-    <table class="tablaservicios" border="5">
-        <tr>
-            <th>MANTENIMIENTO</th>
-            <th>LIMPIEZA</th>
-            <th>RECONEXION</th>
-            <th>VENTA</th>
-            <th>DELIVERY</th>
-        </tr>
 
-        <tr>
-            <th>
-                <img class="mantenimiento" src="img\mantenimiento.png" height="200px" width="250px"/>
-            </th>
-            <th>
-                <img class="limpieza" src="img\limpieza.webp" height="200px" width="250px"/>
-            </th>
-            <th>
-                <img class="reconexion" src="img\reconexion.jpg" height="200px" width="250px"/>
-            </th>
-            <th>
-                <img class="venta" src="img\venta.jpg" height="200px" width="250px"/>
-            </th>
-            <th>
-                <img class="delivery" src="img\delivery.jpg" height="200px" width="250px"/>
-            </th> 
-        </tr>
+        <div class="cards-list">
+  
+            <div class="card 1">
+              <div class="card_image"> <img src="./img/mantenimiento.png" alt="mantenimiento"/> </div>
+              <div class="card_title title-white">
+                <p>MANTENIMIENTO</p>
+              </div>
+            </div>
 
-    </table>
+  
+              <div class="card 2">
+              <div class="card_image">
+                <img src="img/limpieza.webp" alt="pc limpieza"/>
+                </div>
+              <div class="card_title title-white">
+                <p>LIMPIEZA</p>
+              </div>
+            </div>
+       
+
+      
+            <div class="card 3">
+              <div class="card_image">
+                <img src="img/reconexion.jpg" alt="reconectar"/>
+              </div>
+              <div class="card_title title-white">
+                <p>RECONEXION</p>
+              </div>
+            </div>
+           
+
+          
+            <div class="card 4">
+              <div class="card_image">
+                <img src="img/venta.jpg" alt="venta"/>
+                </div>
+              <div class="card_title title-white">
+                <p>VENTA</p>
+              </div>
+            </div>
+
+
+            <div class="card 5">
+                <div class="card_image">
+                  <img src="img/delivery.jpg" alt="delivery"/>
+                  </div>
+                <div class="card_title title-white">
+                  <p>DELIVERY</p>
+                </div>
+              </div>
+            
+            
+            </div>
+
 </main>
     </main>
 
@@ -66,6 +102,7 @@
 
     </footer>
 
+    <script src="./script/app.js"></script>
 
 </body>
 </html>

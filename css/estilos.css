@@ -1,0 +1,349 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  background-color: #2a8dff; }
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10vh;
+  margin-bottom: auto;
+  gap: 40px;
+  margin-left: 20px;
+  margin-right: 20px; }
+
+.center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.cardnos1 {
+  background-color: white;
+  width: 250px;
+  min-height: 404.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 20px;
+  margin: 5px;
+  -webkit-box-shadow: -20px -20px 0px 0px #449bff;
+  box-shadow: -20px -20px 0px 0px #449bff;
+  border-radius: 10px;
+  -webkit-animation-name: shadow-show;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1.5s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: shadow-show;
+  animation-duration: 1.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+  -o-transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+  transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+  }
+
+  .cardnos2 {
+    background-color: white;
+    width: 250px;
+    min-height: 404.5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 20px;
+    margin: 5px;
+    -webkit-box-shadow: -20px -20px 0px 0px #449bff;
+    box-shadow: -20px -20px 0px 0px #449bff;
+    border-radius: 10px;
+    -webkit-animation-name: shadow-show;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1.5s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: shadow-show;
+    animation-duration: 1.5s;
+    -webkit-transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+    -o-transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+    transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+    }
+
+    .cardnos3 {
+      background-color: white;
+      width: 250px;
+      min-height: 404.5px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding: 20px;
+      margin: 5px;
+      -webkit-box-shadow: -20px -20px 0px 0px #449bff;
+      box-shadow: -20px -20px 0px 0px #449bff;
+      border-radius: 10px;
+      -webkit-animation-name: shadow-show;
+      /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 1.5s;
+      /* Safari 4.0 - 8.0 */
+      animation-name: shadow-show;
+      animation-duration: 1.5s;
+      -webkit-transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+      -o-transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+      transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+      }
+
+
+
+
+
+  .cardnos1 h1, .cardnos1 h2, .cardnos1 h3, .cardnos1 h4, .cardnos1 h5 {
+    margin: 0px;
+    padding: 0px 0px 15px 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px;
+    color: #282828; }
+  .cardnos1 hr {
+    display: block;
+    border: none;
+    height: 3px;
+    background-color: #2a8dff;
+    margin: 0px;
+    -webkit-animation-name: line-show;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.3s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: line-show;
+    animation-duration: 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+    -o-transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+    transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+    /* custom */ }
+  .cardnos1 p {
+    margin: 15px 0px 0px 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 100;
+    letter-spacing: -0.25px;
+    line-height: 1.25;
+    font-size: 16px;
+    word-break: break-all;
+    word-wrap: pre-wrap;
+    color: #282828;
+    -webkit-animation-name: p-show;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1.5s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: p-show;
+    animation-duration: 1.5s; }
+  .cardnos1 button {
+    border: none;
+    background-color: #2a8dff;
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px 30px;
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-transform: uppercase; }
+
+.cardnos2 {
+  background-color: white;
+  width: 250px;
+  min-height: 404.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 20px;
+  margin: 5px;
+  -webkit-box-shadow: -20px -20px 0px 0px #449bff;
+  box-shadow: -20px -20px 0px 0px #449bff;
+  border-radius: 10px;
+  -webkit-animation-name: shadow-show;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1.5s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: shadow-show;
+  animation-duration: 1.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+  -o-transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+  transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+  /* custom */ }
+  .cardnos2 h1, .cardnos2 h2, .cardnos2 h3, .cardnos2 h4, .cardnos2 h5 {
+    margin: 0px;
+    padding: 0px 0px 15px 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px;
+    color: #282828; }
+  .cardnos2 hr {
+    display: block;
+    border: none;
+    height: 3px;
+    background-color: #2a8dff;
+    margin: 0px;
+    -webkit-animation-name: line-show;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.3s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: line-show;
+    animation-duration: 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+    -o-transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+    transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+    /* custom */ }
+  .cardnos2 p {
+    margin: 15px 0px 0px 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 100;
+    letter-spacing: -0.25px;
+    line-height: 1.25;
+    font-size: 16px;
+    word-break: break-all;
+    word-wrap: pre-wrap;
+    color: #282828;
+    -webkit-animation-name: p-show;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1.5s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: p-show;
+    animation-duration: 1.5s; }
+  .cardnos2 button {
+    border: none;
+    background-color: #2a8dff;
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px 30px;
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-transform: uppercase; }
+
+.cardnos3 {
+  background-color: white;
+  width: 250px;
+  min-height: 404.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 20px;
+  margin: 5px;
+  -webkit-box-shadow: -20px -20px 0px 0px #449bff;
+  box-shadow: -20px -20px 0px 0px #449bff;
+  border-radius: 10px;
+  -webkit-animation-name: shadow-show;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1.5s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: shadow-show;
+  animation-duration: 1.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+  -o-transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+  transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+  /* custom */ }
+  .cardnos3 h1, .cardnos3 h2, .cardnos3 h3, .cardnos3 h4, .cardnos3 h5 {
+    margin: 0px;
+    padding: 0px 0px 15px 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px;
+    color: #282828; }
+  .cardnos3 hr {
+    display: block;
+    border: none;
+    height: 3px;
+    background-color: #2a8dff;
+    margin: 0px;
+    -webkit-animation-name: line-show;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.3s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: line-show;
+    animation-duration: 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+    -o-transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+    transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+    /* custom */ }
+  .cardnos3 p {
+    margin: 15px 0px 0px 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 100;
+    letter-spacing: -0.25px;
+    line-height: 1.25;
+    font-size: 16px;
+    word-break: break-all;
+    word-wrap: pre-wrap;
+    color: #282828;
+    -webkit-animation-name: p-show;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1.5s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: p-show;
+    animation-duration: 1.5s; }
+  .cardnos3 button {
+    border: none;
+    background-color: #2a8dff;
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px 30px;
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-transform: uppercase; }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes line-show {
+  from {
+    margin: 0px 100px; }
+  to {
+    margin: 0px; } }
+/* Standard syntax */
+@keyframes line-show {
+  from {
+    margin: 0px 100px; }
+  to {
+    margin: 0px; } }
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes p-show {
+  from {
+    color: white; }
+  to {
+    color: #282828; } }
+/* Standard syntax */
+@keyframes p-show {
+  from {
+    color: white; }
+  to {
+    color: #282828; } }
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes shadow-show {
+  from {
+    -webkit-box-shadow: 0px 0px 0px 0px #e0e0e0;
+    box-shadow: 0px 0px 0px 0px #e0e0e0; }
+  to {
+    -webkit-box-shadow: -20px -20px 0px 0px #449bff;
+    box-shadow: -20px -20px 0px 0px #449bff; } }
+/* Standard syntax */
+@keyframes shadow-show {
+  from {
+    -webkit-box-shadow: 0px 0px 0px 0px #e0e0e0;
+    box-shadow: 0px 0px 0px 0px #e0e0e0; }
+  to {
+    -webkit-box-shadow: -20px -20px 0px 0px #449bff;
+    box-shadow: -20px -20px 0px 0px #449bff; } }
+
+/*# sourceMappingURL=estilos.css.map */

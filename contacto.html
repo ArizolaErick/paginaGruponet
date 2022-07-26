@@ -20,55 +20,79 @@
                 <li><a href="./nosotros.html">NOSOTROS</a></li>
                 <li><a href="./contacto.html">CONTACTO</a></li>
           </ul>
-          <div class="menu-bar"></div>
-            <i class="fa-solid fa-bars"></i>
+          <div class="cont-menu-mobile">
+            <i role="button" class="fa-solid fa-xmark"></i>
+            <div class="menu-mobile">
+                <a href="./index.html">INICIO</a>
+                <a href="./productos.html">PRODUCTOS</a>
+                <a href="./servicios.html">SERVICIOS</a>
+                <a href="./nosotros.html">NOSOTROS</a>
+                <a href="./contacto.html">CONTACTO</a>
+            </div>
+          </div>
+          <div class="menu-bar"><i class="fa-solid fa-bars"></i></div>
     </header>
 
     <main class="datoscontact">
-    <form action="#" method="get" class="formulario">
-        <input type="text" placeholder="Nombre completo" name="nombre-completo">
-        <br><br>
-        <input type="email" placeholder="solace.nim@gmail.com">
-        <br><br>
-        <label for="contrasena" class="tituloTabla">Contraseña</label><br>
-        <input type="password" name="contrasena" id="contrasena">
-        <br><br>
-        <textarea cols="50" rows="10"></textarea>
-        <br><br>
+        <div class="contact_form">
 
-     
-        <input type="submit" value="Comentar">
-        <input type="reset" value="Borrar Todo">
-        <br><br>
-   
-        <label>
-            <input type="checkbox">
-            <span>Suscribirme al newsletter</span>
-        </label>
-        <br><br>
+            <div class="formulario">      
+              <h1>Formulario de contacto</h1>
+                <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
         
-        <label>
-            <span>Hombre</span>
-            <input type="radio" name="sexo" value="hombre">
-
-            <span>Mujer</span>
-            <input type="radio" name="sexo" value="mujer">
-
-            <span>No Especificar</span>
-            <input type="radio" name="sexo" value="No Especificar">
-        </label>
-        <br><br>
-        <select name="pais">
-            <option value="seleccion">Seleccione su país</option>
-            <option value="arg">Perú</option>
-            <option value="cl">Chile</option>
-            <option value="mx">Colombia</option>
-            <option value="mx">Paraguay</option>
-            <option value="mx">Argentina</option>
-            <option value="mx">Brasil</option>
-        </select>
         
-    </form>
+                  <form action="submeter-formulario.php" method="post">       
+        
+                    
+                        <p>
+                          <label for="nombre" class="colocar_nombre">Nombre
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                        </p>
+                      
+                        <p>
+                          <label for="email" class="colocar_email">Email
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                        </p>
+                    
+                        <p>
+                          <label for="telefone" class="colocar_telefono">Teléfono
+                          </label>
+                            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                        </p>    
+                      
+                        <p>
+                          <label for="website" class="colocar_website">Sitio web
+                          </label>
+                            <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+                        </p>    
+                      
+                        <p>
+                          <label for="asunto" class="colocar_asunto">Asunto
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                        </p>    
+                      
+                        <p>
+                          <label for="mensaje" class="colocar_mensaje">Mensaje
+                            <span class="obligatorio">*</span>
+                          </label>                     
+                                            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                        </p>                    
+                      
+                        <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+        
+                        <p class="aviso">
+                          <span class="obligatorio"> * </span>los campos son obligatorios.
+                        </p>          
+                    
+                  </form>
+            </div>  
+          </div>
     </main>
 
 
@@ -81,6 +105,7 @@
 
     </footer>
 
+    <script src="./script/app.js"></script>
 
 </body>
 </html>

@@ -4,31 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GRUPONET</title>
+    <title>GRUPONET - PRODUCTOS ELECTRÓNICA Y MÁS</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-          <img src="img/logo.jpg" class="logo" alt="gruponetlogo">
-          <ul class="menu">
-                <li><a href="./index.html">INICIO</a></li>
-                <li><a href="./productos.html">PRODUCTOS</a></li>
-                <li><a href="./servicios.html">SERVICIOS</a></li>
-                <li><a href="./nosotros.html">NOSOTROS</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
-          </ul>
-          <div class="menu-bar"></div>
-            <i class="fa-solid fa-bars"></i>
-    </header>
+  <header>
+    <nav class="navbar">
+      <img src="img/logo.jpg" class="logo" alt="gruponetlogo">
+      <ul class="menu">
+            <li><a href="./index.html">INICIO</a></li>
+            <li><a href="./productos.html">PRODUCTOS</a></li>
+            <li><a href="./servicios.html">SERVICIOS</a></li>
+            <li><a href="./nosotros.html">NOSOTROS</a></li>
+            <li><a href="./contacto.html">CONTACTO</a></li>
+      </ul>
+      <div class="cont-menu-mobile">
+        <i role="button" class="fa-solid fa-xmark"></i>
+        <div class="menu-mobile">
+            <a href="./index.html">INICIO</a>
+            <a href="./productos.html">PRODUCTOS</a>
+            <a href="./servicios.html">SERVICIOS</a>
+            <a href="./nosotros.html">NOSOTROS</a>
+            <a href="./contacto.html">CONTACTO</a>
+        </div>
+      </div>
+      <div class="menu-bar"><i class="fa-solid fa-bars"></i></div>
+</header>
 
     <main class="productos">
-        <div class="cards_list">
+        <div class="cards-list">
   
             <div class="card 1">
-              <div class="card_image"> <img src="img\discoduro.webp" /> </div>
+              <div class="card_image"> <img src="img\discoduro.webp" alt="discoduro"/> </div>
               <div class="card_title title-white">
                 <p>DISCOS DUROS</p>
               </div>
@@ -37,7 +46,7 @@
   
               <div class="card 2">
               <div class="card_image">
-                <img src="img\cables.webp" />
+                <img src="img\cables.webp" alt="cables"/>
                 </div>
               <div class="card_title title-white">
                 <p>CABLES</p>
@@ -48,7 +57,7 @@
       
             <div class="card 3">
               <div class="card_image">
-                <img src="img\conector.jpg" />
+                <img src="img\conector.jpg" alt="conector"/>
               </div>
               <div class="card_title title-white">
                 <p>CONECTORES</p>
@@ -59,7 +68,7 @@
           
               <div class="card 4">
               <div class="card_image">
-                <img src="img\accesorios.jpg" />
+                <img src="img\accesorios.jpg" alt="accesorio"/>
                 </div>
               <div class="card_title title-white">
                 <p>ACCESORIOS</p>
@@ -73,8 +82,8 @@
 
 
     </main>
-        </main>
-
+  
+      </main>
 
     <footer class="footer">
         <div class="socialnet">
@@ -85,6 +94,7 @@
 
     </footer>
 
+    <script src="./script/app.js"></script>
 
 </body>
 </html>

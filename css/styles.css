@@ -220,51 +220,23 @@ body{
 
 .servicios{
     height: 88vh;
+    max-height: 100%;
     background-image: url(../img/gruponetfondo.jpg);
     background-size: cover;
     background-blend-mode: darken;
     max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-}
-
-.servicios .tablaservicios{
-    grid-column: 2 / 9;
-    grid-row: 3 / 7;
-    color: whitesmoke;
-    align-content: center;
-}
-
-@media only screen and (max-width: 600px){
-    .servicios .tablaservicios{
-        position: absolute;
-        width: 100%;
-        height: 70vh;
-        display: grid;
-        align-items: center;
-        margin-top: 8em;
-        transform:translateX(170%)
-    }
-}
-
-
-/* PRODUCTOS */
-.productos{
-    height: 88vh;
-    background-image: url(../img/gruponetfondo.jpg);
-    background-size: cover;
-    background-blend-mode: darken;
-    max-width: 100%;
-    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
 }
 
 .cards-list {
-    z-index: 0;
-    width: 100%;
     display: flex;
-    justify-content: space-around;
+    min-height: 100%;
+    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
   }
   
   .card {
@@ -272,7 +244,7 @@ body{
     width: 300px;
     height: 300px;
     border-radius: 40px;
-  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
     cursor: pointer;
     transition: 0.4s;
     background-blend-mode: darken;
@@ -282,6 +254,7 @@ body{
     width: inherit;
     height: inherit;
     border-radius: 40px;
+    background-blend-mode: darken;
   }
   
   .card .card_image img {
@@ -308,8 +281,7 @@ body{
   }
   
   .title-white {
-    color: white;
-    text-shadow: #000000;
+    color: white; text-shadow: black 0.1em 0.1em 0.2em
   }
   
   
@@ -317,3 +289,245 @@ body{
     .card-list {flex-direction: column;
     }
   }
+
+
+/* PRODUCTOS */
+.productos{
+    height: 88vh;
+    max-height: 100%;
+    background-image: url(../img/gruponetfondo.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+
+.cards-list {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.4s;
+    background-blend-mode: darken;
+  }
+  
+  .card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    background-blend-mode: darken;
+  }
+  
+  .card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: cover;
+  }
+  
+  .card .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -80px;
+    height: 40px;
+  }
+  
+  .card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  
+  .title-white {
+    color: white; text-shadow: black 0.1em 0.1em 0.2em
+  }
+  
+  
+  @media all and (max-width: 600px) {
+    .card-list {flex-direction: column;
+    }
+  }
+
+
+  /* CONTACTO */
+
+  .datoscontact{
+    height: 88vh;
+    max-height: 100%;
+    background-image: url(../img/gruponetfondo.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:max-content
+  }
+
+  .contact_form{  
+    width: 460px; 
+    max-height: 100%;
+    margin: 30px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: #fbfbfb; 
+    padding-left: 30px; 
+    justify-content: center;
+  }
+  
+  
+  .formulario input{
+    background-color: #fbfbfb; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #2591d8;
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+  }
+  
+  
+  .formulario textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #2591d8;
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+  
+  
+  .formulario label{
+    display: block; 
+    float: center;  
+  }
+  
+  
+  .formulario button{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: #2591d8; 
+    border-color: #2591d8;
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+  }
+  
+  
+  .formulario button p{
+    color: #fff; 
+  }
+  
+  
+  .formulario span{
+    color: #2d8edd; 
+  }
+  
+  
+  .aviso{
+    font-size: 13px;  
+    color: #0e0e0e;  
+  }
+  
+  
+  .formulario h1{
+    font-size: 39px;  
+    text-align: letf; 
+    padding-bottom: 20px; 
+    color: #2084e2;
+  }
+  
+  
+  .formulario h3{
+    font-size: 16px; 
+    padding-bottom: 30px;
+    color: #0e0e0e;   
+  }
+  
+  
+  .formulario p{
+    font-size: 14px; 
+    color: #0e0e0e; 
+  }
+  
+  
+  ::-webkit-input-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  ::-webkit-textarea-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  .formulario input:focus{
+    outline:0;
+    border: 1px solid #97d848;
+  }
+  
+  
+  .formulario textarea:focus{
+    outline:0;
+    border: 1px solid #97d848;
+  }
+  
+
+  @media all and (max-width: 600px) {
+    .formulario {flex-direction: column;
+    }
+  }
+
+
+  /* NOSOTROS */
+
+  .nosotroscontent{
+    height: 88vh;
+    max-height: 100%;
+    background-image: url(../img/gruponetfondo.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    max-width: 100%;
+}
+
+
+.ubica{
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 40px;
+  color: #fff;
+}
+
+
